@@ -1,0 +1,443 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.icon2 {
+  font-size: 36px;
+  color: #ad0606; }
+
+.about .heading, .services .heading, .projects .heading, .latest-blog .heading, .banner .main-header, .banner .banner-content, .about .work, .services .services-provided, .projects .project-nav, .projects .design, .second-banner .team, .latest-blog .blog-content, .client .logo, .contact-info .info, .connect-us .message, .footer .footer-design {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.about .heading, .services .heading, .projects .heading, .latest-blog .heading {
+  text-align: center; }
+  .about .heading h2, .services .heading h2, .projects .heading h2, .latest-blog .heading h2 {
+    padding-top: 30px;
+    font-size: 30px; }
+  .about .heading p, .services .heading p, .projects .heading p, .latest-blog .heading p {
+    color: #a6a4a4;
+    font-size: 15px;
+    padding: 0 20%;
+    line-height: 1.2; }
+
+.services .services-provided, .projects .design, .latest-blog .blog-content, .client .logo, .contact-info .info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 50px 0;
+  margin: 0 auto; }
+
+.top-bar {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  background-color: #302c2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .top-bar .first {
+    display: flex; }
+    .top-bar .first .left {
+      margin: 0 7px; }
+      .top-bar .first .left p {
+        font-size: 25px; }
+        .top-bar .first .left p spam {
+          color: #36df36; }
+    .top-bar .first .right {
+      background-color: black;
+      color: #a6a4a4;
+      width: 98px;
+      position: relative; }
+      .top-bar .first .right h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px; }
+  .top-bar .next {
+    margin: 0 2px; }
+    .top-bar .next button {
+      border: 0;
+      background-color: #302c2c;
+      color: #a6a4a4;
+      height: 19px;
+      width: 19px;
+      margin: 5px;
+      border-left: 2px solid #a6a4a4;
+      padding: 3px; }
+    .top-bar .next .screen {
+      font-size: 15px; }
+
+.banner {
+  background: url(../images/backk1.jpg) no-repeat center center/cover; }
+  .banner .main-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center; }
+    .banner .main-header .head {
+      color: #ad0606;
+      font-family: "Great Vibes", cursive;
+      font-size: 70px;
+      margin-right: 70px; }
+    .banner .main-header .nav {
+      display: flex;
+      list-style: none;
+      align-self: center; }
+      .banner .main-header .nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 4px;
+        font-size: 11px; }
+      .banner .main-header .nav a.active {
+        color: #ad0606; }
+  .banner .banner-content {
+    text-align: center;
+    padding: 90px 0;
+    color: white; }
+    .banner .banner-content h1 {
+      font-size: 30px; }
+    .banner .banner-content p {
+      font-size: 12px;
+      margin: 10px 0; }
+    .banner .banner-content button {
+      background: none;
+      border: 1px solid #ad0606;
+      color: white;
+      padding: 10px; }
+
+.about .work {
+  display: flex;
+  margin: 0 auto 40px;
+  justify-content: space-between;
+  width: 85%; }
+  .about .work .item {
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+    margin-top: 45px; }
+    .about .work .item .image {
+      margin: 5px auto;
+      border: 2px solid #ad0606;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      position: relative; }
+      .about .work .item .image .icon {
+        font-size: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .about .work .item h2 {
+      font-size: 15px;
+      margin-bottom: 5px; }
+    .about .work .item .mess {
+      font-size: 12px; }
+
+.services {
+  background-color: #302c2c; }
+  .services .heading h2 {
+    color: white; }
+  .services .services-provided {
+    justify-content: center; }
+    .services .services-provided .data {
+      border: 2px solid #a6a4a4;
+      width: 30%;
+      padding: 50px;
+      margin: 10px 5px 10px 10px;
+      text-align: center; }
+      .services .services-provided .data .tool {
+        font-size: 40px;
+        color: #a6a4a4; }
+      .services .services-provided .data p {
+        color: #a6a4a4;
+        font-size: 12px; }
+
+.projects .project-nav .project-ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 20px 0; }
+  .projects .project-nav .project-ul .project-items a {
+    text-decoration: none;
+    color: #302c2c;
+    font-family: "Oswald", sans-serif;
+    margin: 0 10px;
+    font-weight: bold; }
+  .projects .project-nav .project-ul .project-items .new {
+    text-decoration-line: underline;
+    text-decoration-color: #ad0606; }
+.projects .design {
+  justify-content: space-between; }
+  .projects .design .new-design {
+    width: 30%;
+    margin: 10px 5px 10px 10px;
+    text-align: center; }
+    .projects .design .new-design img {
+      width: 100%; }
+
+.second-banner {
+  text-align: center;
+  background: url(../images/background2.jpg) no-repeat center center/cover;
+  position: relative; }
+  .second-banner::before {
+    background-color: black;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4; }
+  .second-banner .team {
+    color: white;
+    position: relative;
+    z-index: 2;
+    padding: 50px 0; }
+    .second-banner .team button {
+      background: none;
+      border: 1px solid #ad0606;
+      color: white;
+      font-size: 12px;
+      padding: 10px;
+      margin-top: 15px; }
+  .second-banner span {
+    color: #ad0606; }
+
+.latest-blog .blog-content {
+  justify-content: space-between; }
+  .latest-blog .blog-content .blog-item {
+    width: 30%;
+    margin: 10px 5px 10px 10px;
+    text-align: left; }
+    .latest-blog .blog-content .blog-item img {
+      width: 100%; }
+    .latest-blog .blog-content .blog-item h3 {
+      font-size: 15px;
+      margin: 10px 0; }
+    .latest-blog .blog-content .blog-item p {
+      font-size: 12px;
+      margin-bottom: 10px; }
+    .latest-blog .blog-content .blog-item .posted {
+      color: black; }
+      .latest-blog .blog-content .blog-item .posted span {
+        color: #ad0606; }
+    .latest-blog .blog-content .blog-item .read {
+      font-weight: bold; }
+
+.client {
+  background-color: #f8f6f6; }
+  .client .logo {
+    justify-content: center; }
+    .client .logo .logo-img {
+      border: 1px solid #a6a4a4;
+      width: 15%; }
+      .client .logo .logo-img img {
+        width: 100%; }
+
+.contact-info .info {
+  justify-content: center; }
+  .contact-info .info .contact {
+    width: 50%;
+    padding: 15px;
+    text-align: left; }
+    .contact-info .info .contact p {
+      font-size: 15px;
+      margin-top: 12px; }
+    .contact-info .info .contact .insert-option {
+      display: flex;
+      margin: 15px 0; }
+      .contact-info .info .contact .insert-option .contact-image {
+        width: 30px;
+        height: 30px;
+        background-color: #ad0606;
+        border-radius: 50%;
+        position: relative; }
+        .contact-info .info .contact .insert-option .contact-image .collection {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 15px;
+          color: white; }
+      .contact-info .info .contact .insert-option .add {
+        margin-left: 10px; }
+        .contact-info .info .contact .insert-option .add .para {
+          font-size: 10px; }
+  .contact-info .info .location {
+    width: 50%;
+    padding: 15px;
+    text-align: left; }
+    .contact-info .info .location img {
+      width: 100%; }
+
+.connect-us .message {
+  margin: 0 auto;
+  width: 62%;
+  padding: 20px; }
+  .connect-us .message .form-validation .form {
+    width: inherit;
+    display: flex; }
+    .connect-us .message .form-validation .form .name {
+      width: 50%;
+      margin: 0 10px 0 0; }
+      .connect-us .message .form-validation .form .name input {
+        width: 100%;
+        height: 35px;
+        margin: 6px 0;
+        padding: 0 15px;
+        display: block; }
+    .connect-us .message .form-validation .form .box {
+      width: 50%;
+      margin: 0 0 0 10px; }
+      .connect-us .message .form-validation .form .box .subject {
+        width: 100%; }
+        .connect-us .message .form-validation .form .box .subject input {
+          width: 100%;
+          height: 35px;
+          margin: 5px 0;
+          padding: 0 15px; }
+      .connect-us .message .form-validation .form .box .mess textarea {
+        width: 100%;
+        height: 75px;
+        margin: 5px 0;
+        padding: 0 15px; }
+  .connect-us .message .form-validation .submit-btn {
+    background-color: #ad0606;
+    width: 150px;
+    color: white;
+    border: none;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 12px; }
+
+.footer {
+  background-color: #302c2c; }
+  .footer .footer-design {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px; }
+    .footer .footer-design h2 {
+      font-size: 50px;
+      color: #ad0606;
+      font-family: "Great Vibes", cursive; }
+    .footer .footer-design .website-image {
+      font-size: 25px;
+      margin: 10px; }
+    .footer .footer-design .facebook {
+      color: blue; }
+    .footer .footer-design .twitter {
+      color: skyblue; }
+    .footer .footer-design .pinterest {
+      color: #ad0606; }
+    .footer .footer-design .linkedin {
+      color: blue; }
+    .footer .footer-design .skype {
+      color: skyblue; }
+    .footer .footer-design .globe {
+      color: #975c97; }
+    .footer .footer-design .wifi {
+      color: rgba(183, 122, 10, 0.697); }
+    .footer .footer-design p {
+      margin-top: 15px; }
+      .footer .footer-design p span {
+        color: blue; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner .main-header .head {
+    font-size: 50px; } }
+@media (min-width: 320px) and (max-width: 768px) {
+  .top-bar .first .left p {
+    font-size: 17px; }
+  .top-bar .next button {
+    width: 15px; }
+
+  .banner .main-header {
+    flex-direction: column; }
+    .banner .main-header .head {
+      margin-right: 0; }
+    .banner .main-header .nav a {
+      padding: 2px;
+      font-weight: 100;
+      font-size: 7px; }
+
+  .about .heading h2 {
+    font-size: 20px; }
+  .about .heading p {
+    font-size: 12px;
+    padding: 0px 7%; }
+  .about .work {
+    flex-wrap: wrap; }
+    .about .work .item {
+      width: 50%; }
+
+  .services .heading h2 {
+    font-size: 20px; }
+  .services .heading p {
+    font-size: 12px;
+    padding: 0px 7%; }
+  .services .services-provided {
+    justify-content: space-between;
+    width: 90%; }
+    .services .services-provided .data {
+      width: 43%;
+      padding: 12px 0; }
+
+  .projects .heading h2 {
+    font-size: 20px; }
+  .projects .heading p {
+    font-size: 12px;
+    padding: 0px 7%; }
+  .projects .project-nav .project-ul .project-items a {
+    font-size: 9px;
+    margin: 0px 4px; }
+  .projects .design {
+    width: 90%;
+    padding: 5px 0; }
+    .projects .design .new-design {
+      width: 44%; }
+
+  .latest-blog .heading h2 {
+    font-size: 20px; }
+  .latest-blog .heading p {
+    font-size: 12px;
+    padding: 0px 7%; }
+  .latest-blog .blog-content {
+    width: 90%; }
+    .latest-blog .blog-content .blog-item {
+      width: 44%;
+      padding: 5px 0; }
+
+  .client .logo {
+    width: 90%;
+    padding: 30px 0; }
+    .client .logo .logo-img {
+      width: 20%; }
+
+  .contact-info .info {
+    width: 90%;
+    padding: 5px 0;
+    flex-direction: column; }
+    .contact-info .info .contact, .contact-info .info .location {
+      width: 100%; }
+
+  .connect-us .message {
+    width: 90%; }
+    .connect-us .message h2 {
+      font-size: 20px; }
+    .connect-us .message .form-validation .form {
+      flex-direction: column; }
+      .connect-us .message .form-validation .form .name, .connect-us .message .form-validation .form .box {
+        width: 100%;
+        margin: 0; }
+
+  .footer .footer-design {
+    width: 90%; } }
+
+/*# sourceMappingURL=style.css.map */

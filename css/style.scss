@@ -1,0 +1,509 @@
+@import "variables";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.icon2 {
+  font-size: 36px;
+  color: $red;
+}
+
+%fixed-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+%heading-controller {
+  .heading {
+    @extend %fixed-width;
+    text-align: center;
+    h2 {
+      padding-top: 30px;
+      font-size: 30px;
+    }
+    p {
+      color: $col;
+      font-size: 15px;
+      padding: 0 20%;
+      line-height: 1.2;
+    }
+  }
+}
+
+%properties {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.top-bar {
+  color: $white;
+  font-family: $font;
+
+  background-color: $grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .first {
+    display: flex;
+    .left {
+      margin: 0 7px;
+      p {
+        font-size: 25px;
+        spam {
+          color: $green;
+        }
+      }
+    }
+
+    .right {
+      background-color: $black;
+      color: $col;
+      width: 98px;
+      position: relative;
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+      }
+    }
+  }
+  .next {
+    margin: 0 2px;
+    button {
+      border: 0;
+      background-color: $grey;
+      color: $col;
+      height: 19px;
+      width: 19px;
+      margin: 5px;
+      border-left: 2px solid $col;
+      padding: 3px;
+    }
+    .screen {
+      font-size: 15px;
+    }
+  }
+}
+
+.banner {
+  background: url(../images/backk1.jpg) no-repeat center center/cover;
+  .main-header {
+    @extend %fixed-width;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center;
+
+    .head {
+      color: $red;
+      font-family: $font2;
+      font-size: 70px;
+      margin-right: 70px;
+    }
+
+    .nav {
+      display: flex;
+      list-style: none;
+      align-self: center;
+      a {
+        text-decoration: none;
+        color: $white;
+        font-weight: bold;
+        padding: 4px;
+        font-size: 11px;
+      }
+      a.active {
+        color: $red;
+      }
+    }
+  }
+
+  .banner-content {
+    @extend %fixed-width;
+    text-align: center;
+    padding: 90px 0;
+    color: $white;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+      margin: 10px 0;
+    }
+    button {
+      background: none;
+      border: 1px solid $red;
+      color: $white;
+      padding: 10px;
+    }
+  }
+}
+
+.about {
+  @extend %heading-controller;
+  .work {
+    @extend %fixed-width;
+    display: flex;
+    margin: 0 auto 40px;
+    justify-content: space-between;
+    width: 85%;
+
+    .item {
+      padding: 20px;
+      width: 22%;
+      text-align: center;
+      margin-top: 45px;
+      .image {
+        margin: 5px auto;
+        border: 2px solid $red;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        .icon {
+          font-size: 25px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      h2 {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      .mess {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.services {
+  background-color: $grey;
+  .heading {
+    h2 {
+      color: $white;
+    }
+  }
+  @extend %heading-controller;
+
+  .services-provided {
+    @extend %fixed-width;
+    @extend %properties;
+    justify-content: center;
+    .data {
+      border: 2px solid $col;
+      width: 30%;
+      padding: 50px;
+      margin: 10px 5px 10px 10px;
+      text-align: center;
+      .tool {
+        font-size: 40px;
+        color: $col;
+      }
+      p {
+        color: $col;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.projects {
+  @extend %heading-controller;
+  .project-nav {
+    @extend %fixed-width;
+    .project-ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 20px 0;
+
+      .project-items {
+        a {
+          text-decoration: none;
+          color: $grey;
+          font-family: $font;
+          margin: 0 10px;
+          font-weight: bold;
+        }
+        .new {
+          text-decoration-line: underline;
+          text-decoration-color: $red;
+        }
+      }
+    }
+  }
+
+  .design {
+    @extend %fixed-width;
+    @extend %properties;
+    justify-content: space-between;
+    .new-design {
+      width: 30%;
+      margin: 10px 5px 10px 10px;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.second-banner {
+  text-align: center;
+  background: url(../images/background2.jpg) no-repeat center center/cover;
+  position: relative;
+  &::before {
+    background-color: black;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+  }
+  .team {
+    @extend %fixed-width;
+    color: $white;
+    position: relative;
+    z-index: 2;
+    padding: 50px 0;
+    button {
+      background: none;
+      border: 1px solid $red;
+      color: $white;
+      font-size: 12px;
+      padding: 10px;
+      margin-top: 15px;
+    }
+  }
+  span {
+    color: $red;
+  }
+}
+
+.latest-blog {
+  @extend %heading-controller;
+
+  .blog-content {
+    @extend %fixed-width;
+    @extend %properties;
+    justify-content: space-between;
+    .blog-item {
+      width: 30%;
+      margin: 10px 5px 10px 10px;
+      text-align: left;
+
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-size: 15px;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      .posted {
+        color: $black;
+        span {
+          color: $red;
+        }
+      }
+      .read {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.client {
+  background-color: $light;
+  .logo {
+    @extend %fixed-width;
+    @extend %properties;
+    justify-content: center;
+    .logo-img {
+      border: 1px solid $col;
+      width: 15%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.contact-info {
+  .info {
+    @extend %fixed-width;
+    @extend %properties;
+    justify-content: center;
+
+    .contact {
+      width: 50%;
+      padding: 15px;
+      text-align: left;
+      p {
+        font-size: 15px;
+        margin-top: 12px;
+      }
+      .insert-option {
+        display: flex;
+        margin: 15px 0;
+        .contact-image {
+          width: 30px;
+          height: 30px;
+          background-color: $red;
+          border-radius: 50%;
+          position: relative;
+          .collection {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 15px;
+            color: $white;
+          }
+        }
+        .add {
+          margin-left: 10px;
+          .para {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .location {
+      width: 50%;
+      padding: 15px;
+      text-align: left;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.connect-us {
+  .message {
+    @extend %fixed-width;
+    margin: 0 auto;
+    width: 62%;
+    padding: 20px;
+    .form-validation {
+
+      .form {
+        width:inherit;
+        display: flex;
+        .name {
+          width:50%;
+          margin: 0 10px 0 0;
+          input {
+            width: 100%;
+            height: 35px;
+            margin: 6px 0;
+            padding: 0 15px;
+            display: block;
+          }
+        }
+        .box {
+          width:50%;
+          margin: 0 0 0 10px;
+          .subject {
+            width:100%;
+            input {
+              width: 100%;
+              height: 35px;
+              margin: 5px 0;
+              padding: 0 15px;
+            }
+          }
+
+          .mess {
+            textarea {
+              width: 100%;
+              height: 75px;
+              margin: 5px 0;
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+      .submit-btn {
+        background-color: $red;
+        width: 150px;
+        color: $white;
+        border: none;
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $grey;
+  .footer-design {
+    @extend %fixed-width;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    h2 {
+      font-size: 50px;
+      color: $red;
+      font-family: $font2;
+    }
+
+    .website-image {
+      font-size: 25px;
+      margin: 10px;
+    }
+    .facebook {
+      color: $blue;
+    }
+    .twitter {
+      color: $skyblue;
+    }
+    .pinterest {
+      color: $red;
+    }
+    .linkedin {
+      color: $blue;
+    }
+    .skype {
+      color: $skyblue;
+    }
+    .globe {
+      color: $purple;
+    }
+    .wifi {
+      color: $orange;
+    }
+
+    p {
+      margin-top: 15px;
+      span {
+        color: $blue;
+      }
+    }
+  }
+}
+
+@import "media.scss";
